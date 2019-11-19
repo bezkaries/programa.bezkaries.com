@@ -3,17 +3,18 @@
 ------------------------------------------------------------------------------*/
 
 body {
-  font: 13px/1.4em "Helvetica Neue", arial,freesans,clean,sans-serif;
+  font: 16px "Helvetica Neue", arial,freesans,clean,sans-serif;
+  line-height: 28px;
   background-color: #fff;
   color: #393939;
 }
 
 p {
-  margin: 1em 0;
+  margin: 0.3em 0;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1.2em;
   padding: .5em 0;
   margin: 2em 0 1em;
   font-weight: normal;
@@ -35,7 +36,7 @@ body.dev-mode.enterprise .not-enterprise {
 .content h1 {
   font-weight: 300;
   -webkit-backface-visibility: hidden;
-  font-size: 36px;
+  font-size: 2em;
   margin: 0em 0 0.5em;
   position: relative;
   line-height: 30px;
@@ -71,11 +72,11 @@ h1 .header-anchor {
 .header-anchor:before {
   content:'\f0c1';
   font-family: 'FontAwesome';
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 1.3em;
   color: #333;
   margin: 2em auto 1em;
   position: relative;
@@ -87,23 +88,25 @@ h2 span.step {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 1.1em;
   color: #333;
   margin: 1.5em 0 .5em;
   position: relative;
 }
 
 h4 {
+  font-size: 1.3em;
+  font-weight: 300;
   margin: 1em 0;
   position: relative;
 }
 
 h5 {
-  font-size: 13px;
+  font-size: 0.6em;
 }
 
 h6 {
-  font-size: 13px;
+  font-size: 0.6em;
   color: #666;
 }
 
@@ -142,7 +145,7 @@ a img {
 .button, .button-secondary {
   background-color: #297fc7;
   color: #fff;
-  font-size: 16px;
+  font-size: 0.8em;
   padding: 15px;
   border-radius: 5px;
 }
@@ -154,7 +157,7 @@ a img {
 
 .button-secondary {
   background-color: #738797;
-  font-size: 15px;
+  font-size: 0.7em;
   padding: 12px;
   -webkit-backface-visibility: hidden;
 }
@@ -169,7 +172,7 @@ a img {
   padding: 15px 14px 16px 47px;
   background: url(/images/feed-icon.png) 10px center no-repeat;
   color: #444;
-  font-size: 13px;
+  font-size: 0.6em;
   text-decoration: none;
 }
 
@@ -183,7 +186,7 @@ a img {
   padding: 15px 14px 16px 47px;
   background: url(/images/facebook-icon.png) 10px center no-repeat;
   color: #444;
-  font-size: 13px;
+  font-size: 0.6em;
   text-decoration: none;
 }
 
@@ -197,7 +200,7 @@ a img {
 /********************/
 
 label, input, button, select, textarea {
-    font-size: 14px;
+    font-size: 0.6em;
     line-height: 1.4
 }
 
@@ -209,7 +212,7 @@ label {
 }
 
 label.error {
-    font-size: 13px;
+    font-size: 0.6em;
     font-weight: normal;
     cursor: auto;
     color: #c44
@@ -230,7 +233,7 @@ input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
     height: 36px;
     padding: 7px 9px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 0.6em;
     line-height: 1.4;
     color: #333;
     border-radius: 4px;
@@ -294,7 +297,7 @@ select[multiple], select[size] {
 
 .form-field-error {
     color: #bd2c00;
-    font-size: 13px;
+    font-size: 0.6em;
     text-shadow: 0 1px 1px #FFF
 }
 
@@ -383,7 +386,7 @@ select[multiple], select[size] {
 }
 
 .form-note {
-    font-size: 12px;
+    font-size: 0.55em;
     color: #999;
     margin: -5px 0 15px
 }
@@ -431,13 +434,13 @@ label .note {
 }
 
 .btn-small {
-    font-size: 12px;
+    font-size: 0.55em;
     padding: 5px 10px
 }
 
 .btn-large {
     padding: 14px 20px;
-    font-size: 20px;
+    font-size: 1.1em;
     border-radius: 6px
 }
 
@@ -560,7 +563,7 @@ label .note {
   float: right;
   font-weight: bold;
   text-shadow: white 1px 1px 0px;
-  font-size: 14px;
+  font-size: 0.65em;
   margin-right: 10px;
 }
 
@@ -612,7 +615,7 @@ label .note {
 #footer {
   position: relative;
   bottom:0;
-  font-size:12px;
+  font-size:0.6em;
   color: #636363;
   margin: 0 auto;
   max-width: 980px;
@@ -625,7 +628,7 @@ label .note {
 
 #footer .mega-octicon {
   color: #ccc;
-  font-size: 24px;
+  font-size: 2em;
 }
 
 #footer .mega-octicon:hover {
@@ -678,7 +681,7 @@ label .note {
     Not Footer
 ------------------------------------------------------------------------------*/
 #wrapper {
-  padding: 20px 0;
+  padding: 10px 0;
   height: auto;
   max-width: 980px;
   margin: 0 auto;
@@ -699,8 +702,6 @@ label .note {
   float: left;
   color: #393939;
   z-index: 2;
-  font-size: 14px;
-  line-height: 1.5em;
 }
 
 .blog .content {
@@ -716,7 +717,7 @@ label .note {
 }
 
 .content ul {
-  margin: 1.5em;
+  margin: 0.3em 1.5em;
   list-style-type: disc;
 }
 
@@ -755,7 +756,7 @@ ol > li:before {
   width: 30px;
   padding: 0 10px 0 0;
   color: #999;
-  font-size: 22px;
+  font-size: 1.3em;
   font-weight: bold;
   line-height: 35px;
   text-align: right;
@@ -839,73 +840,6 @@ p code {
 
 .content .intro {
   color: #868686;
-}
-
-.article-content ul {
-  margin: 1.5em;
-}
-
-.change {
-  padding-bottom: 40px;
-}
-
-
-.change .meta {
-  font-size: 13px;
-  margin: 3px 0 20px;
-}
-
-.change .meta ul {
-  margin: 0;
-}
-
-.change .meta ul img {
-  margin: 0;
-}
-
-.who_when a {
-  padding-left: 6px;
-  color: #999;
-}
-
-.change .who_when .author {
-  color: #eee;
-}
-
-.change .who_when .published {
-  color: #ccc;
-}
-
-.meta li {
-  color: #999;
-  padding-right: 20px;
-  list-style: none;
-  display: inline;
-}
-
-.published span {
-  color: #999;
-  vertical-align: middle;
-  padding-bottom: 5px;
-}
-
-#markdown-toc {
-  margin: 1em 1.5em 2em;
-}
-
-#markdown-toc li {
-  font-size: 14px;
-  list-style-type: lower-roman;
-  margin: 0.25em 0;
-}
-
-#markdown-toc li a {
-  color: #333;
-  text-decoration: underline;
-}
-
-#markdown-toc li a:hover {
-  color: #327fc7;
 }
 
 .content table {
@@ -1022,21 +956,22 @@ p code {
 
 /* @end */
 .quotes {
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 360;
+  font-size: 1em;
   line-height: 1.2em;
   color:#333;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.1em;
 }
 .author {
-  font-size:13px;
+  font-size:0.8em;
   color:#666;
-  margin-top: 0.3em;
+  margin-top: 0.1em;
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 1024px) {
   .content {
-    font-size: 16px;
+
   }
   .content, .sidebar-shell {
     margin-left: 10px;
