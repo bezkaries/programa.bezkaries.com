@@ -102,7 +102,11 @@ h4 {
 }
 
 h5 {
-  font-size: 0.6em;
+  font-size: 1.1em;
+  font-weight: 300;
+  font-style: italic;
+  margin: 1em 0;
+  position: relative;
 }
 
 h6 {
@@ -956,7 +960,7 @@ p code {
 
 /* @end */
 .quotes {
-  font-weight: 360;
+  font-weight: 340;
   font-size: 1em;
   line-height: 1.2em;
   color:#333;
