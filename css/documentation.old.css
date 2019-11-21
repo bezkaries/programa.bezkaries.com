@@ -685,6 +685,10 @@ label .note {
     Not Footer
 ------------------------------------------------------------------------------*/
 #wrapper {
+  padding: 10px 0;
+  height: auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 #wrapper:after, #wrapper:before {
@@ -696,17 +700,8 @@ label .note {
   clear: both;
 }
 
-.content-wrapper {
-  position: relative;
-  float: left;
-  z-index: 2;
-  height: 100%;
-  width:100%;
-  padding-left: 10%;
-  padding-right: 10px;
-}
 .content {
-  max-width: 970px;
+  width: 630px;
   position: relative;
   float: left;
   color: #393939;
@@ -958,6 +953,11 @@ p code {
   width: 110px;
 }
 
+/* Adjust the widths individually if you like */
+.social-share .google {
+  width: 75px;
+}
+
 /* @end */
 .quotes {
   font-weight: 340;
@@ -974,8 +974,12 @@ p code {
 }
 
 @media screen and (max-width: 1024px) {
-  .content-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+  .content {
+
+  }
+  .content, .sidebar-shell {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
   }
 }
