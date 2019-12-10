@@ -95,8 +95,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3em;
-  font-weight: 450;
+  font-size: 1.15em;
+  font-weight: 350;
   margin: 1em 0;
   position: relative;
 }
@@ -170,35 +170,6 @@ a img {
   text-decoration: none;
   background-color: #7e909e;
 }
-
-.rss-subscribe {
-  display: block;
-  padding: 15px 14px 16px 47px;
-  background: url(/images/feed-icon.png) 10px center no-repeat;
-  color: #444;
-  font-size: 0.6em;
-  text-decoration: none;
-}
-
-.rss-subscribe:hover {
-  background-color: #f4f4f7;
-  text-decoration: none;
-}
-
-.facebook-subscribe {
-  display: block;
-  padding: 15px 14px 16px 47px;
-  background: url(/images/facebook-icon.png) 10px center no-repeat;
-  color: #444;
-  font-size: 0.6em;
-  text-decoration: none;
-}
-
-.facebook-subscribe:hover {
-  background-color: #f4f4f7;
-  text-decoration: none;
-}
-
 /********************/
 /*  Form elements   */
 /********************/
@@ -598,7 +569,7 @@ label .note {
 ------------------------------------------------------------------------------*/
 
 .wrapper {
-  max-width: 980px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -622,7 +593,7 @@ label .note {
   font-size:0.6em;
   color: #636363;
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 780px;
   clear: both;
 }
 
@@ -704,9 +675,11 @@ label .note {
   width:100%;
   padding-left: 10%;
   padding-right: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .content {
-  max-width: 970px;
+  max-width: 770px;
   position: relative;
   float: left;
   color: #393939;
@@ -977,5 +950,59 @@ p code {
   .content-wrapper {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible-active, .collapsible:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+  display: none;
+  overflow: hidden;
+}
+.collapsible:before {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  color: white;
+  float: left;
+  margin-right: 5px;
+}
+.collapsible-active:before {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.grid {
+  min-height: 100%;
+	display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+}
+
+.gridColumnSpanTwelve {
+  width:100%;
+  grid-column: span 12;
+  position: relative;
+}
+
+.gridColumnSpanSix {
+  margin-left: 20px;
+  margin-right: 20px;
+  width:95%;
+  grid-column: span 6;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .gridColumnSpanSix {
+    grid-column: span 12;
+    align-self: start;
+    margin: 0 auto;
+    width: 98%;
   }
 }
