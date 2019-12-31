@@ -1012,19 +1012,19 @@ p code {
 }
 
 .roundedButton {
-	background-color:#4183C4;
+	background-color:#44c767;
 	border-radius:28px;
-	border:1px solid #183b89;
+	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:16px;
 	padding:16px 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f4697;
+	text-shadow:0px 1px 0px #2f6627;
 }
 .roundedButton:hover {
-	background-color:#3173b4;
+	background-color:#5cbf2a;
 }
 .roundedButton:active {
 	position:relative;
