@@ -952,11 +952,13 @@ p code {
     width: 100%;
   }
   .content-wrapper {
-    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
   .content {
+    width: -webkit-calc(100% - 20px);
+    width:    -moz-calc(100% - 20px);
+    width:         calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
   }
