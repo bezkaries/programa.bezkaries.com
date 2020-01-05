@@ -952,6 +952,7 @@ p code {
     width: 100%;
   }
   .content-wrapper {
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
