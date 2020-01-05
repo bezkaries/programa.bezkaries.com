@@ -68,8 +68,33 @@
         <br/>Основание: профилактична програма
         <br/>Дължима сума: 70 лв
         <br/>
-        <br/>Paypal buton
-        <br/>
+        <br/><b>Чрез Paypal:</b>
+        <script  src="https://www.paypal.com/sdk/js?client-id=ARmN-EbZ0JBhArtvqD1n2mliv9xuGY9eGW3FJgx5dHahKGd8BfjZqFFQBOYOm9QkkDdA16n3ILX2abBW"></script>
+        <div id="paypal-button-container"></div>
+        <script>
+        paypal.Buttons({
+          createOrder: function(data, actions) {
+            // This function sets up the details of the transaction, including the amount and line item details.
+            return actions.order.create({
+              purchase_units: [{
+                amount: {
+                  value: '36.00',
+                  currency: "EUR"
+                },
+
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            // This function captures the funds from the transaction.
+            return actions.order.capture().then(function(details) {
+              // This function shows a transaction success message to your buyer.
+              alert('Transaction completed by ' + details.payer.name.given_name);
+            });
+          }
+      }).render('#paypal-button-container');
+          // This function displays Smart Payment Buttons on your web page.
+        </script>
         <br/>След заплащане на програмата изпратете имейл на <a href="mailto:info@bezkaries.com">info@bezkaries.com</a> за да получите достъп до видеата и групата във Фейсбук.
       </div>
     </div>

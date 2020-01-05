@@ -672,7 +672,9 @@ label .note {
   float: left;
   z-index: 2;
   height: 100%;
-  width:100%;
+    width: -webkit-calc(90% - 10px);
+    width:    -moz-calc(90% - 10px);
+    width:         calc(90% - 10px);
   padding-left: 10%;
   padding-right: 10px;
   padding-top: 25px;
