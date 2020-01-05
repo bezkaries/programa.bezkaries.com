@@ -949,7 +949,7 @@ p code {
 @media screen and (max-width: 1024px) {
 
   #wrapper {
-    width: 100%;
+    width: 90%;
   }
   .content-wrapper {
     padding-left: 10px;
