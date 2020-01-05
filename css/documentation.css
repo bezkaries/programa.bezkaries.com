@@ -949,7 +949,9 @@ p code {
 @media screen and (max-width: 1024px) {
 
   #wrapper {
-    width: 90%;
+    width: -webkit-calc(100% - 20px);
+    width:    -moz-calc(100% - 20px);
+    width:         calc(100% - 20px);
   }
   .content-wrapper {
     padding-left: 10px;
