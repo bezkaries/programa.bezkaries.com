@@ -63,40 +63,15 @@
       <div class="content">
          <br/>След заплащане на програмата изпратете имейл на <a href="mailto:info@bezkaries.com">info@bezkaries.com</a> с имената си, както са написани във Фейсбук, за да получите достъп до групата и видеата.
         <br/>
-        <br/><b>Информация за плащане:</b>
+        <br/><b>Информация за плащане</b>
         <b>По банков път или на каса на еasyPay:</b>
-        <br/>Банка ДСК: BG59STSA93000024252132
+        <br/>Банка ДСК BG59STSA93000024252132
         <br/>АИППМПДМ БЕЗ КАРИЕС ЕООД
         <br/>Основание: профилактична програма
         <br/>Дължима сума: 70 лв
         <br/>
         <br/><b>Чрез Paypal:</b>
-        <script  src="https://www.paypal.com/sdk/js?client-id=AcAJ2xuOHok3yzSy5Ksu31GXAtVbUqFfKdJn9ER_apDmWNoGvwnqo0nYE2jKMhwl2PNSYsw9SFDy5Q7W"></script>
-        <div id="paypal-button-container"></div>
-        <script>
-        paypal.Buttons({
-          createOrder: function(data, actions) {
-            // This function sets up the details of the transaction, including the amount and line item details.
-            return actions.order.create({
-              purchase_units: [{
-                amount: {
-                  value: '36.00',
-                  currency: "EUR"
-                },
-
-              }]
-            });
-          },
-          onApprove: function(data, actions) {
-            // This function captures the funds from the transaction.
-            return actions.order.capture().then(function(details) {
-              // This function shows a transaction success message to your buyer.
-              alert('Плащането беше извършено успешно, ' + details.payer.name.given_name + '! Моля изпратете имейл на info@bezkaries.com с имената си, както са написани във Фейсбук, за да получите достъп до групата и видеата');
-            });
-          }
-      }).render('#paypal-button-container');
-          // This function displays Smart Payment Buttons on your web page.
-        </script>
+        <br/>Изпратете имейл на info@bezkaries.com ако желаете да използвате този начин на плащане.
       </div>
     </div>
   </div>
